@@ -4,7 +4,7 @@ package br.com.bytebank.banco.modelo;
 /**
  * Classe representa a moldura de uma conta
  * 
- * @author Nico Steppat
+ * @author Guilherme Henrique
  *
  */
 public abstract class Conta extends Object implements Comparable<Conta>{
@@ -23,11 +23,8 @@ public abstract class Conta extends Object implements Comparable<Conta>{
      */
     public Conta(int agencia, int numero){
         Conta.total++;
-        //System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
-        //this.saldo = 100;
-        //System.out.println("Estou criando uma conta " + this.numero);
     }
 
     public abstract void deposita(double valor);
